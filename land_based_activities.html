@@ -9,7 +9,9 @@
 </head>
 <body>
   <header>
-    <h1>Lochquarry Outdoor Centre</h1>
+    <div class="logo">
+      <a href="index.html" class="logo__link">Lochquarry Outdoor Centre</a>
+    </div>
     <nav class="topnav">
       <ul class="topnav__list">
         <li><a href="index.html">Home</a></li>
@@ -27,54 +29,88 @@
   </header>
 
   <main>
-    <div class="container">
-      <section class="hero-welcome">
-        <h2>Land Based Activities</h2>
+    <div class="main-container">
+      <section class="hero hero-welcome">
+        <h1>Land Based Activities</h1>
       </section>
 
       <section class="description">
         <div class="description__container">
-          <p>Visitors can take part in a wide range of land-based activities on and off site.</p>
+          <p class="description__text">
+            Visitors can take part in a wide range of land-based activities on and off site.
+          </p>
         </div>
       </section>
 
       <section class="activities">
         <div class="activities__container">
-          <div class="activity-card">
-            <h3>Hillwalking</h3>
+          <article class="activity-card">
+            <header class="activity-card__header">
+              <h2 class="activity-card__heading">Hillwalking</h2>
+            </header>
             <p>From short walks around the site to Munro-bagging expeditions, Lochquarry has it all!</p>
             <p>Walks can be tailored to suit any age or experience of groups and can last from one hour to all day adventures.</p>
-            <p>Max group size 12.</p>
-            <p>Ages 6+</p>
-          </div>
+            <ul>
+              <li class="activity-card__list-item">
+                Max group size 12.
+              </li>
+              <li class="activity-card__list-item">
+                Ages 6+
+              </li>
+            </ul>
+          </article>
 
-          <div class="activity-card">
-            <h3>Archery</h3>
+          <article class="activity-card">
+            <header class="activity-card__header">
+              <h2 class="activity-card__heading">Archery</h2>
+            </header>
             <p>Are you the next Robin Hood? Learn to hold a bow and fire an arrow and take part in fast and fun shootout competitions.</p>
-            <p>Max group size 6.</p>
-            <p>Ages 6+</p>
-          </div>
+            <ul>
+              <li class="activity-card__list-item">
+                Max group size 6.
+              </li>
+              <li class="activity-card__list-item">
+                Ages 6+
+              </li>
+            </ul>
+          </article>
 
-          <div class="activity-card">
-            <h3>Orienteering</h3>
+          <article class="activity-card">
+            <header class="activity-card__header">
+              <h2 class="activity-card__heading">Orienteering</h2>
+            </header>
             <p>Set in the centre’s grounds, find all the markers and make it back in time to show off your superior navigation knowledge.</p>
-            <p>Groups of 2+, one map per group.</p>
-            <p>Ages 6+</p>
-          </div>
+            <ul>
+              <li class="activity-card__list-item">
+                Groups of 2+, one map per group.
+              </li>
+              <li class="activity-card__list-item">
+                Ages 6+
+              </li>
+            </ul>
+          </article>
 
-          <div class="activity-card">
-            <h3>Axe Throwing</h3>
+          <article class="activity-card">
+            <header class="activity-card__header">
+              <h2 class="activity-card__heading">Axe Throwing</h2>
+            </header>
             <p>Take yourself back to a time of Vikings and have a go at throwing an axe.</p>
             <p>Try to hit the target, better yet throw yourself a bullseye.</p>
-            <p>Max group size 6.</p>
-            <p>Ages 10+</p>
-          </div>
+            <ul>
+              <li class="activity-card__list-item">
+                Max group size 6.
+              </li>
+              <li class="activity-card__list-item">
+                Ages 10+
+              </li>
+            </ul>
+          </article>
         </div>
       </section>
 
       <section class="testimonials">
         <div class="testimonials__container">
-          <h3 class="testimonials__heading">Testimonials</h3>
+          <h2 class="testimonials__heading">Testimonials</h2>
           <div class="testimonials-item">
             <figure>
               <blockquote>
@@ -93,8 +129,10 @@
 
       <section class="external-links">
         <div class="external-links__container">
-          <h3 class="external-links__heading">Learn About Hillwalking in Scotland</h3>
-          <p><a href="https://www.walkhighlands.co.uk" target="_blank">Hillwalking in Scotland</a></p>
+          <h2 class="external-links__heading">Learn About Hillwalking in Scotland</h2>
+          <a href="https://www.walkhighlands.co.uk" target="_blank">
+            Hillwalking in Scotland <i class="fa fa-external-link"></i>
+          </a>
         </div>
       </section>
     </div>
@@ -102,11 +140,11 @@
   
   <footer>
     <address>
-      <p>Lochquarry Outdoor Centre</p>
-      <p>123 Adventure Lane</p>
-      <p>Argyll, Scotland</p>
+      <p class="address__text">Lochquarry Outdoor Centre</p>
+      <p class="address__text">123 Adventure Lane</p>
+      <p class="address__text">Argyll, Scotland</p>
     </address>
-    <nav class="footernav">
+    <div class="footernav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="land_based_activities.html">Land Based Activities</a></li>
@@ -114,7 +152,7 @@
         <li><a href="rope_based_activities.html">Rope Based Activities</a></li>
         <li><a href="about.html">About Us</a></li>
       </ul>
-    </nav>
+    </div>
     <p>&copy; 2024 Lochquarry Outdoor Centre. All rights reserved.</p>
   </footer>
 </body>

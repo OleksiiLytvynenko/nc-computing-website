@@ -9,7 +9,9 @@
 </head>
 <body>
   <header>
-    <h1>Lochquarry Outdoor Centre</h1>
+    <div class="logo">
+      <a href="index.html" class="logo__link">Lochquarry Outdoor Centre</a>
+    </div>
     <nav class="topnav">
       <ul class="topnav__list">
         <li><a class="topnav__link-current" href="index.html">Home</a></li>
@@ -27,16 +29,18 @@
   </header>
 
   <main>
-    <div class="container">
-      <section class="hero-welcome">
-        <h2>Welcome to Lochquarry Outdoor Centre</h2>
-        <p>We offer a variety of outdoor activities for young people aged 6-18.</p>
+    <div class="main-container">
+      <section class="hero hero-welcome">
+        <h1>Welcome to Lochquarry Outdoor Centre</h1>
+        <p class="hero__text">
+          We offer a variety of outdoor activities for young people aged 6-18.
+        </p>
       </section>
 
       <section class="description">
         <div class="description__container">
-          <h3>Level Up Your Adventure at Lochquarry</h3>
-          <p>
+          <h2 class="description__heading">Level Up Your Adventure at Lochquarry</h2>
+          <p class="description__text">
             Lochquarry Outdoor Centre is set in acres of land in the heart of the majestic Argyll hills. 
             On our doorstep is not only magnificent scenery, 
             but also a breath-taking selection of outdoor and adventurous activities.
@@ -52,8 +56,10 @@
             <div class="activity-image">
               <img src="assets/images/hillwalking_600.jpg" alt="Hillwalking at Lochquarry Outdoor Centre">
             </div>
-            <h3>Land Based Activities</h3>
-            <p>Hillwalking, archery, orienteering, and axe throwing.</p>
+            <h2 class="activity-banner__heading">Land Based Activities</h2>
+            <p class="activity-banner__description">
+              Hillwalking, archery, orienteering, and axe throwing.
+            </p>
             <a href="land_based_activities.html" class="button">Learn More</a>
           </div>
 
@@ -61,8 +67,10 @@
             <div class="activity-image">
               <img src="assets/images/kayaking_600px.jpg" alt="Kayaking at Lochquarry Outdoor Centre">
             </div>
-            <h3>Water Based Activities</h3>
-            <p>Kayaking, canoeing, and powerboating.</p>
+            <h2 class="activity-banner__heading">Water Based Activities</h2>
+            <p class="activity-banner__description">
+              Kayaking, canoeing, and powerboating.
+            </p>
             <a href="water_based_activities.html" class="button">Learn More</a>
           </div>
 
@@ -70,8 +78,10 @@
             <div class="activity-image">
               <img src="assets/images/abseiling_600px.jpg" alt="Abseiling at Lochquarry Outdoor Centre">
             </div>
-            <h3>Rope Based Activities</h3>
-            <p>Climbing, abseiling, and pole climbing.</p>
+            <h2 class="activity-banner__heading">Rope Based Activities</h2>
+            <p class="activity-banner__description">
+              Climbing, abseiling, and pole climbing.
+            </p>
             <a href="rope_based_activities.html" class="button">Learn More</a>
           </div>
         </div>
@@ -79,11 +89,11 @@
 
       <section class="testimonials">
         <div class="testimonials__container">
-          <h3 class="testimonials__heading">Testimonials</h3>
+          <h2 class="testimonials__heading">Testimonials</h2>
           <div class="testimonials-item">
             <figure>
               <blockquote>
-                <p>
+                <p class="testimonials-item__text">
                   "We had a great time and loved all the different activities that we did"
                 </p>
               </blockquote>
@@ -96,7 +106,7 @@
           <div class="testimonials-item">
             <figure>
               <blockquote>
-                <p>
+                <p class="testimonials-item__text">
                   "I would definitely come back"
                 </p>
               </blockquote>
@@ -109,7 +119,7 @@
           <div class="testimonials-item">
             <figure>
               <blockquote>
-                <p>
+                <p class="testimonials-item__text">
                   "Five stars, it was great"
                 </p>
               </blockquote>
@@ -122,7 +132,7 @@
           <div class="testimonials-item">
             <figure>
               <blockquote>
-                <p>
+                <p class="testimonials-item__text">
                   "The kids had a ball and didn't want to leave"
                 </p>
               </blockquote>
@@ -136,10 +146,10 @@
 
       <section class="external-links">
         <div class="external-links__container">
-          <h3 class="external-links__heading">Learn About Hillwalking in Scotland</h3>
-          <p>
-            <a href="https://www.wildaboutargyll.co.uk/see-and-do/days-out/" target="_blank">Explore Argyll</a>
-          </p>
+          <h2 class="external-links__heading">Learn About Hillwalking in Scotland</h2>
+          <a href="https://www.wildaboutargyll.co.uk/see-and-do/days-out/" target="_blank">
+            Explore Argyll <i class="fa fa-external-link"></i>
+          </a>
         </div>
       </section>
     </div>
@@ -147,11 +157,11 @@
   </main>
   <footer>
     <address>
-      <p>Lochquarry Outdoor Centre</p>
-      <p>123 Adventure Lane</p>
-      <p>Argyll, Scotland</p>
+      <p class="address__text">Lochquarry Outdoor Centre</p>
+      <p class="address__text">123 Adventure Lane</p>
+      <p class="address__text">Argyll, Scotland</p>
     </address>
-    <nav class="footernav">
+    <div class="footernav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="land_based_activities.html">Land Based Activities</a></li>
@@ -159,7 +169,7 @@
         <li><a href="rope_based_activities.html">Rope Based Activities</a></li>
         <li><a href="about.html">About Us</a></li>
       </ul>
-    </nav>
+    </div>
     <p>&copy; 2024 Lochquarry Outdoor Centre. All rights reserved.</p>
   </footer>
 </body>

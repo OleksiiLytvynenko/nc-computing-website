@@ -9,7 +9,9 @@
 </head>
 <body>
   <header>
-    <h1>Lochquarry Outdoor Centre</h1>
+    <div class="logo">
+      <a href="index.html" class="logo__link">Lochquarry Outdoor Centre</a>
+    </div>
     <nav class="topnav">
       <ul class="topnav__list">
         <li><a href="index.html">Home</a></li>
@@ -27,44 +29,74 @@
   </header>
 
   <main>
-    <div class="container">
-      <section class="hero-water">
-        <h2>Water Based Activities</h2>
+    <div class="main-container">
+      <section class="hero hero-water">
+        <h1>Water Based Activities</h1>
       </section>
 
       <section class="description">
-        <p>Water-based activities all take place on Lochquarry itself.</p>
+        <div class="description__container">
+          <p class="description__text">
+            Water-based activities all take place on Lochquarry itself.
+          </p>
+        </div>
       </section>
 
       <section class="activities">
         <div class="activities__container">
           <div class="activity-card">
-            <h3>Kayaking</h3>
-            <p>Have a go at paddling, rolling and rafting in one of our brand-new kayaks.</p>
-            <p>Max group size 8.</p>
-            <p>Ages 8+</p>
+            <header class="activity-card__header">
+              <h2 class="activity-card__heading">Kayaking</h2>
+            </header>
+            <p>
+              Have a go at paddling, rolling and rafting in one of our brand-new kayaks.
+            </p>
+            <ul>
+              <li class="activity-card__list-item">
+                Max group size 8.
+              </li>
+              <li class="activity-card__list-item">
+                Ages 8+
+              </li>
+            </ul>
           </div>
 
           <div class="activity-card">
-            <h3>Canoeing</h3>
+            <header class="activity-card__header">
+              <h2 class="activity-card__heading">Canoeing</h2>
+            </header>
             <p>Work single-handedly or in pairs to canoe the length of Lochquarry.</p>
             <p>You can even take a picnic with you and explore some of the Loch’s islands.</p>
-            <p>Max group size 8 boats (up to 16 people).</p>
-            <p>Ages 6+</p>
+            <ul>
+              <li class="activity-card__list-item">
+                Max group size 8 boats (up to 16 people).
+              </li>
+              <li class="activity-card__list-item">
+                Ages 6+
+              </li>
+            </ul>
           </div>
 
           <div class="activity-card">
-            <h3>Powerboating</h3>
+            <header class="activity-card__header">
+              <h2 class="activity-card__heading">Powerboating</h2>
+            </header>
             <p>Take control of one of the Centre’s two RIBs out on Lochquarry and try your hand powerboating.</p>
-            <p>Groups size 6.</p>
-            <p>Ages 12+</p>
+            <ul>
+              <li class="activity-card__list-item">
+                Groups size 6.
+              </li>
+              <li class="activity-card__list-item">
+                Ages 12+
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="testimonials">
         <div class="testimonials__container">
-          <h3 class="testimonials__heading">Testimonials</h3>
+          <h2 class="testimonials__heading">Testimonials</h2>
           <div class="testimonials-item">
             <figure>
               <blockquote>
@@ -82,8 +114,10 @@
 
       <section class="external-links">
         <div class="external-links__container">
-          <h3 class="external-links__heading">Learn More About Kayaking in Argyll</h3>
-          <p><a href="https://www.wildaboutargyll.co.uk/see-and-do/on-in-the-water/kayaking-and-canoeing/">Kayaking and Canoeing in Argyll</a></p>
+          <h2 class="external-links__heading">Learn More About Kayaking in Argyll</h2>
+          <a href="https://www.wildaboutargyll.co.uk/see-and-do/on-in-the-water/kayaking-and-canoeing/" target="_blank">
+            Kayaking and Canoeing in Argyll <i class="fa fa-external-link"></i>
+          </a>
         </div>
       </section>
     </div>
@@ -91,11 +125,11 @@
 
   <footer>
     <address>
-      <p>Lochquarry Outdoor Centre</p>
-      <p>123 Adventure Lane</p>
-      <p>Argyll, Scotland</p>
+      <p class="address__text">Lochquarry Outdoor Centre</p>
+      <p class="address__text">123 Adventure Lane</p>
+      <p class="address__text">Argyll, Scotland</p>
     </address>
-    <nav class="footernav">
+    <div class="footernav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="land_based_activities.html">Land Based Activities</a></li>
@@ -103,7 +137,7 @@
         <li><a href="rope_based_activities.html">Rope Based Activities</a></li>
         <li><a href="about.html">About Us</a></li>
       </ul>
-    </nav>
+    </div>
     <p>&copy; 2024 Lochquarry Outdoor Centre. All rights reserved.</p>
   </footer>
 </body>
