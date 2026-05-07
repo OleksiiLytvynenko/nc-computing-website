@@ -4,25 +4,70 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --main-text-color: #253D2C;
+  --button-color: #2E6F40;
+  --button-hover-color: #3D8635;
+  --background-color: #68BA7F;
+  --backgrround-color-light: #CFFFDC;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--main-text-color);
+}
+
+.main-container {
+  margin: 1rem auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-container {
+    max-width: 1200px;
+    margin: 1rem auto;
+  }
 }
 
 header {
   display: flex;
   flex-direction: column;
-  background-color: green;
+  background-color: var(--background-color);
+}
+
+.logo {
+  padding: 14px;
+}
+
+.logo__link {
+  color: #F5F5F5;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 h1 {
   color: #F5F5F5;
-  padding: 14px;
-  font-size: 100%;
+  font-size: 200%;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
 }
 
 .topnav ul {
@@ -46,7 +91,6 @@ h1 {
   .topnav__list {
     flex-direction: row;
   }
-  
 }
 
 .topnav a {
@@ -63,21 +107,31 @@ h1 {
 }
 
 .icon {
+  background: #1A1C1A;
   position: absolute;
   top: 0px;
   right: 0px;
 }
 
-.hero-welcome {
+@media screen and (min-width: 600px) {
+  .icon {
+    display: none;
+  }
+}
+
+.hero {
   display: flex;
   flex-direction: column;
-  background-image: url(assets/images/landscape_64px.jpg);
   background-size: cover;
   background-position: center;
   height: 400px;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+}
+
+.hero-welcome {
+  background-image: url(assets/images/landscape_64px.jpg);
 }
 
 @media only screen and (min-width: 640px) {
@@ -92,21 +146,13 @@ h1 {
   }
 }
 
-.hero-welcome p {
+.hero__text {
   color: #F5F5F5;
   text-align: center;
 }
 
 .hero-water {
-  display: flex;
-  flex-direction: column;
   background-image: url(assets/images/water_600px.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -122,15 +168,7 @@ h1 {
 }
 
 .hero-rope {
-  display: flex;
-  flex-direction: column;
   background-image: url(assets/images/pole_climb_600px.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -145,40 +183,20 @@ h1 {
   }
 }
 
-.about-heading-with-image-background {
-  display: flex;
-  flex-direction: column;
+.hero-about {
   background-image: url(assets/images/our_team_640px.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
 }
 
 @media only screen and (min-width: 640px) {
-  .about-heading-with-image-background {
+  .hero-about {
     background-image: url(assets/images/our_team_1200px.jpg);
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .about-heading-with-image-background {
+  .hero-about  {
     background-image: url(assets/images/our_team_2000px.jpg);
   }
-}
-
-h2 {
-  color: #F5F5F5;
-  font-size: 200%;
-  text-align: center;
-}
-
-.welcome-section p {
-  color: #F5F5F5;
-  font-size: 100%;
-  text-align: center;
 }
 
 .description__container {
@@ -188,17 +206,8 @@ h2 {
   padding: 1rem;
 }
 
-.description h3 {
-  color: #333;
-  font-size: 150%;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.description p {
-  color: #333;
-  font-size: 120%;
+.description__text {
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -241,7 +250,7 @@ h2 {
 }
 
 .testimonials h3 {
-  color: #333;
+  color: var(--main-text-color);
   font-size: 150%;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -249,14 +258,14 @@ h2 {
 }
 
 .testimonials-item {
-  color: #333;
+  color: var(--main-text-color);
   padding: 20px;
   font-size: 110%;
-  width: 100;
+  width: 100%;
   text-align: center;
   margin-bottom: 1rem;
   border-left: 2pt solid #008000;
-  background-color: #CCFFCC;
+  background-color: var(--backgrround-color-light);
 }
 
 @media only screen and (min-width: 600px) {
@@ -277,7 +286,8 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-
+    align-items: stretch;
+    justify-content: center;
   }
 }
 
@@ -297,8 +307,19 @@ h2 {
 @media only screen and (min-width: 600px) {
   .activity-card {
     width: 48%;
-    height: 170px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 1rem;
   }
+}
+
+.activity-card__header {
+  background-color: #FFF;
+}
+
+.activity-card__heading {
+  margin-bottom: 1rem;
 }
 
 .staff__heading {
@@ -321,6 +342,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
+    align-items: stretch;
     justify-content: center;
   }
 }
@@ -340,8 +362,11 @@ h2 {
 
 @media only screen and (min-width: 600px) {
   .staff-card {
+    display: flex;
+    flex-direction: column;
     width: 30%;
-    height: 210px;
+    height: auto;
+    margin-bottom: 1rem;
   }
 }
 
@@ -386,30 +411,15 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.external-links__container p {
-  background-color: #36404A;
-  color: #F5F5F5;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 0.5rem 0;
-  text-align: center;
-}
-
-.external-links__container p a {
-  color: #F5F5F5;
-  text-decoration: none;
-}
-
 footer {
-  background-color: #1A1C1A;
+  background-color: var(--background-color);
   color: #F5F5F5;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
 }
 
-footer ul {
-  list-style-type: none;
-  padding: 0;
+.address__text {
+  margin-bottom: 0rem;
 }
 
